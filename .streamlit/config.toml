@@ -1,0 +1,15 @@
+[theme]
+# El color principal para los botones primarios, barras de progreso y controles activos.
+primaryColor = "#d51b5d"
+
+# El color de fondo principal
+backgroundColor = "#F5F5F5"
+
+# El color de fondo secundario (para el sidebar y otras cajas)
+secondaryBackgroundColor = "#F2F3F7"
+
+# El color del texto
+textColor = "#10004F"
+
+# La tipografía
+font = "sans serif"

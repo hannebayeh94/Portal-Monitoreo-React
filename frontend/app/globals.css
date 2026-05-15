@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 248 100% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 248 100% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 248 100% 15%;
+    --primary: 340 78% 47%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 196 86% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 248 10% 50%;
+    --accent: 248 100% 15%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 340 78% 47%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 248 50% 5%;
+    --foreground: 0 0% 95%;
+    --card: 248 50% 8%;
+    --card-foreground: 0 0% 95%;
+    --popover: 248 50% 8%;
+    --popover-foreground: 0 0% 95%;
+    --muted: 248 30% 15%;
+    --muted-foreground: 248 10% 65%;
+    --border: 248 30% 20%;
+    --input: 248 30% 20%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+}
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .glass {
+    @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm;
+  }
+  .kpi-value {
+    @apply text-3xl font-extrabold tracking-tight;
+  }
+  .kpi-label {
+    @apply text-sm font-medium text-muted-foreground uppercase tracking-wider;
+  }
+  .section-title {
+    @apply text-lg font-bold text-accent mb-4 flex items-center gap-2;
+  }
+}
